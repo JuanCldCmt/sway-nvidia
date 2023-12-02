@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
-        run: apt build-dep sway
+        run: sudo apt build-dep sway
       - name: Meson build
         run: meson build/
       - name: Ninja build
